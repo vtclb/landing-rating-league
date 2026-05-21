@@ -43,7 +43,11 @@
           <a href="#ranking">Рейтинг</a>
           <a href="#faq">FAQ</a>
         </nav>
-        <a class="button button-primary header-cta" href="#join">
+        <a
+          class="button button-primary header-cta js-contact-trigger"
+          href="https://t.me/lasertag_if"
+          data-contact-trigger
+        >
           <span>Хочу грати</span>
           <span aria-hidden="true">→</span>
         </a>
@@ -71,7 +75,11 @@
               <li>дружнє змагання</li>
             </ul>
             <div class="hero-actions" aria-label="Основні дії">
-              <a class="button button-primary" href="#join">
+              <a
+                class="button button-primary js-contact-trigger"
+                href="https://t.me/lasertag_if"
+                data-contact-trigger
+              >
                 <span>Хочу грати</span>
                 <span aria-hidden="true">→</span>
               </a>
@@ -206,7 +214,11 @@
                 <p>Доросла ліга · Командний формат</p>
               </div>
             </div>
-            <a class="button button-outline" href="#contacts">
+            <a
+              class="button button-outline js-contact-trigger"
+              href="https://t.me/lasertag_if"
+              data-contact-trigger
+            >
               <span>Хочу взяти участь</span>
               <span aria-hidden="true">→</span>
             </a>
@@ -280,18 +292,57 @@
             <p>Лазертаг Івано-Франківськ для тих, хто хоче активний відпочинок і зрозумілий сезонний прогрес.</p>
           </div>
           <div class="final-actions">
-            <a class="button button-primary" href="mailto:hello@example.com">
+            <a
+              class="button button-primary js-contact-trigger"
+              href="https://t.me/lasertag_if"
+              data-contact-trigger
+            >
               <span>Хочу грати</span>
               <span aria-hidden="true">→</span>
             </a>
             <div class="socials" aria-label="Контакти">
-              <a href="#" aria-label="Telegram">TG</a>
-              <a href="#" aria-label="Instagram">IG</a>
-              <a href="#" aria-label="Gamepad">GP</a>
+              <a href="https://t.me/lasertag_if" aria-label="Telegram">TG</a>
+              <a href="https://www.instagram.com/lasertag_if/" aria-label="Instagram">IG</a>
+              <a href="tel:+380501882003" aria-label="Зателефонувати">PH</a>
             </div>
           </div>
         </section>
       </main>
+    </div>
+    <div class="contact-modal" data-contact-modal hidden>
+      <div class="contact-modal__backdrop" data-contact-close></div>
+      <section
+        class="contact-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-modal-title"
+      >
+        <button class="contact-modal__close" type="button" data-contact-close aria-label="Закрити">
+          ×
+        </button>
+        <p class="eyebrow">Запис на гру</p>
+        <h2 id="contact-modal-title">Оберіть зручний спосіб</h2>
+        <p>
+          Напишіть у Telegram для швидкої реєстрації або зв’яжіться іншим способом.
+        </p>
+        <div class="contact-options">
+          <a class="contact-option contact-option-primary" href="https://t.me/lasertag_if">
+            <span>TG</span>
+            <strong>Написати в Telegram</strong>
+            <small>@lasertag_if</small>
+          </a>
+          <a class="contact-option" href="tel:+380501882003">
+            <span>PH</span>
+            <strong>Зателефонувати</strong>
+            <small>050 188 20 03</small>
+          </a>
+          <a class="contact-option" href="https://www.instagram.com/lasertag_if/">
+            <span>IG</span>
+            <strong>Написати в Instagram</strong>
+            <small>@lasertag_if</small>
+          </a>
+        </div>
+      </section>
     </div>
     <script src="./script.js"></script>
   </body>
