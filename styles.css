@@ -723,6 +723,32 @@ mark {
   text-transform: uppercase;
 }
 
+.game-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid rgba(6, 45, 37, 0.14);
+  border-radius: var(--radius);
+  background: rgba(238, 242, 232, 0.74);
+}
+
+.game-countdown span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.game-countdown strong {
+  color: var(--ink);
+  font-size: clamp(1rem, 2vw, 1.24rem);
+  text-align: right;
+  text-transform: uppercase;
+}
+
 .benefits {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1261,6 +1287,15 @@ details p {
   .game-layout {
     grid-template-columns: 72px 1fr;
     gap: 16px;
+  }
+
+  .game-countdown {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .game-countdown strong {
+    text-align: left;
   }
 
   .calendar-icon {

@@ -205,14 +205,18 @@
             <p class="card-label">Найближча рейтингова гра</p>
             <div class="game-layout">
               <div class="calendar-icon" aria-hidden="true">
-                <span>04</span>
+                <span data-next-game-day-number>--</span>
               </div>
               <div>
-                <span class="game-day">Неділя</span>
-                <h3>4 травня</h3>
-                <p>16:00 · Івано-Франківськ</p>
+                <span class="game-day" data-next-game-weekday>За розкладом</span>
+                <h3 data-next-game-date>Середа / п’ятниця / неділя</h3>
+                <p><span data-next-game-time>19:00 або 15:00</span> · Івано-Франківськ</p>
                 <p>Доросла ліга · Командний формат</p>
               </div>
+            </div>
+            <div class="game-countdown" aria-live="polite">
+              <span>До старту</span>
+              <strong data-next-game-countdown>рахуємо час</strong>
             </div>
             <a
               class="button button-outline js-contact-trigger"
