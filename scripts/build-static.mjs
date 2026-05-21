@@ -14,8 +14,8 @@ await mkdir(dist, { recursive: true });
 
 let html = await readFile("index.html", "utf8");
 html = html
-  .replace('href="./styles.css"', `href="${basePath}styles.css"`)
-  .replace('src="./script.js"', `src="${basePath}script.js"`);
+  .replace(/href="\.\/styles\.css([^"]*)"/, `href="${basePath}styles.css$1"`)
+  .replace(/src="\.\/script\.js([^"]*)"/, `src="${basePath}script.js$1"`);
 
 await writeFile(`${dist}/index.html`, html);
 await cp("styles.css", `${dist}/styles.css`);
